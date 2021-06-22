@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Content(props) {
   const { nasaData } = props;
@@ -6,9 +6,12 @@ export default function Content(props) {
 
   return (
     <div>
-      <img src={hdurl} alt={'imageOfTheday'} id={'dailyImage'}/>
-      <h3>{title}</h3>
-      <p><strong>Explanation: </strong>{explanation}</p>
+      <img src={hdurl} alt={"imageOfTheday"} id={"dailyImage"} />
+      <h2>{title}</h2>
+      <p>
+        <strong>Explanation: </strong>
+        {explanation}
+      </p>
     </div>
   );
 }

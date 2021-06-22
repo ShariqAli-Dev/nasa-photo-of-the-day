@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 
@@ -39,8 +39,12 @@
   }
 }
 
-
+/* My Own CSS Edits */
 #dailyImage {
   height: 80%;
   width: 80%;
+}
+
+p {
+  font-size: 1.25rem;
 }
