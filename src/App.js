@@ -4,22 +4,20 @@ import "./App.css";
 
 import Header from "./components/Header";
 
+
 function App() {
-  const [nasaData, setNasaData] = useState(null);
+  const [nasaData, setNasaData] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchNasa = () => {
-  //     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-  //     .then(request => {
-  //       setNasaData(request.data)
-  //     })
-  //     .catch(error => console.log(error));
-  //   }
+  useEffect(() => {
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=CHlgRJCtPYKSYJwYQzcfFLsiQcz8fh5gUwRk3GPF')
+  .then(request => {
+    setNasaData(request.data)
 
-  //   fetchNasa();
-  // }, []);
+  })
+  .catch(error => console.log(error));
+  }, []);
 
-
+  
   return (
     <div className="App">
       <Header nasaData={nasaData}/>
