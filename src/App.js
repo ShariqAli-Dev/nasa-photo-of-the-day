@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header nasaData={nasaData} />
       <Content nasaData={nasaData} />
     </div>
   );

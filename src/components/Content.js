@@ -6,10 +6,9 @@ export default function Content(props) {
 
   return (
     <div>
-      <img src={hdurl} alt={'imageOfTheday'}/>
+      <img src={hdurl} alt={'imageOfTheday'} id={'dailyImage'}/>
       <h3>{title}</h3>
-      <p>{date}</p>
-      <p>{explanation}</p>
+      <p><strong>Explanation: </strong>{explanation}</p>
     </div>
   );
 }
